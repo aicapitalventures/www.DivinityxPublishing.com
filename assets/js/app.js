@@ -1,4 +1,4 @@
-/* Divinityx Publishing Company — production identity bootstrap. */
+/* Divinityx Publishing Company — production identity bootstrap v1.1. */
 (function () {
   const head = document.head;
   const root = document.baseURI;
@@ -13,28 +13,25 @@
   }
 
   const declarations = [
-    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: absolute('assets/brand/favicon-32x32.png') }],
-    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: absolute('assets/brand/apple-touch-icon.png') }],
-    ['link', { rel: 'manifest', href: absolute('assets/brand/site.webmanifest') }],
-    ['meta', { name: 'description', content: 'Divinityx Publishing Company develops books, authors, research, and enduring intellectual property with disciplined editorial stewardship and long-term catalog value.' }],
-    ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:site_name', content: 'Divinityx Publishing Company' }],
-    ['meta', { property: 'og:title', content: document.title || 'Divinityx Publishing Company' }],
-    ['meta', { property: 'og:description', content: 'Books, ideas, and legacies built to outlive the moment.' }],
-    ['meta', { property: 'og:url', content: location.href }],
-    ['meta', { property: 'og:image', content: absolute('assets/brand/divinityx-publishing-crest-gold.webp') }],
-    ['meta', { name: 'twitter:card', content: 'summary' }],
-    ['meta', { name: 'twitter:title', content: document.title || 'Divinityx Publishing Company' }],
-    ['meta', { name: 'twitter:description', content: 'Books, ideas, and legacies built to outlive the moment.' }],
-    ['meta', { name: 'twitter:image', content: absolute('assets/brand/divinityx-publishing-crest-gold.webp') }]
+    ['link[rel="icon"][href$="favicon.ico"]', 'link', { rel: 'icon', href: absolute('assets/brand/favicon.ico'), sizes: 'any' }],
+    ['link[rel="icon"][sizes="16x16"]', 'link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: absolute('assets/brand/favicon-16x16.png') }],
+    ['link[rel="icon"][sizes="32x32"]', 'link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: absolute('assets/brand/favicon-32x32.png') }],
+    ['link[rel="apple-touch-icon"]', 'link', { rel: 'apple-touch-icon', sizes: '180x180', href: absolute('assets/brand/apple-touch-icon.png') }],
+    ['link[rel="manifest"]', 'link', { rel: 'manifest', href: absolute('assets/brand/site.webmanifest') }],
+    ['meta[name="description"]', 'meta', { name: 'description', content: 'Divinityx Publishing Company develops books, authors, research, and enduring intellectual property with disciplined editorial stewardship and long-term catalog value.' }],
+    ['meta[property="og:type"]', 'meta', { property: 'og:type', content: 'website' }],
+    ['meta[property="og:site_name"]', 'meta', { property: 'og:site_name', content: 'Divinityx Publishing Company' }],
+    ['meta[property="og:title"]', 'meta', { property: 'og:title', content: document.title || 'Divinityx Publishing Company' }],
+    ['meta[property="og:description"]', 'meta', { property: 'og:description', content: 'Books, ideas, and legacies built to outlive the moment.' }],
+    ['meta[property="og:url"]', 'meta', { property: 'og:url', content: location.href }],
+    ['meta[property="og:image"]', 'meta', { property: 'og:image', content: absolute('assets/brand/divinityx-publishing-crest-gold.webp') }],
+    ['meta[name="twitter:card"]', 'meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta[name="twitter:title"]', 'meta', { name: 'twitter:title', content: document.title || 'Divinityx Publishing Company' }],
+    ['meta[name="twitter:description"]', 'meta', { name: 'twitter:description', content: 'Books, ideas, and legacies built to outlive the moment.' }],
+    ['meta[name="twitter:image"]', 'meta', { name: 'twitter:image', content: absolute('assets/brand/divinityx-publishing-crest-gold.webp') }]
   ];
 
-  declarations.forEach(([tag, attrs]) => {
-    const selector = attrs.rel
-      ? `${tag}[rel="${attrs.rel}"]`
-      : attrs.name
-        ? `${tag}[name="${attrs.name}"]`
-        : `${tag}[property="${attrs.property}"]`;
+  declarations.forEach(([selector, tag, attrs]) => {
     if (head.querySelector(selector)) return;
     const node = document.createElement(tag);
     Object.entries(attrs).forEach(([key, value]) => node.setAttribute(key, value));

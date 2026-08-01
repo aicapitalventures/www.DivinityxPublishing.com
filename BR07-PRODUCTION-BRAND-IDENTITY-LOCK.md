@@ -1,44 +1,62 @@
-# BR07 — Production Brand Identity Lock
+# BR07 — Production Brand Identity Lock v1.1
 
 **Repository:** `aicapitalventures/www.DivinityxPublishing.com`  
 **Production source:** `build/01-static-publication-catalog`  
-**Controlled branch:** `build/07-production-brand-identity-lock`
+**Controlled branch:** `build/07-production-brand-identity-lock`  
+**Pull request:** `#2`
 
-## Canonical assets
+## Corrected source assignment
+
+The founder-supplied packages supersede the earlier staged binary assets:
+
+- `favicon_io (1).zip` is the controlling source for the horizontal Divinityx Publishing Company wordmark used in the global header and other wide identity placements.
+- `favicon_io.zip` is the controlling source for the Divinityx Publishing Company crest, footer identity, homepage institutional emblem, favicon family, Apple touch identity, Android/app identity, Open Graph image, Twitter preview image, and Organization-schema logo.
+
+## Canonical web assets
 
 - `assets/brand/divinityx-publishing-wordmark-gold.webp`
 - `assets/brand/divinityx-publishing-crest-gold.webp`
 
-Both web assets are optimized derivatives of founder-approved Divinityx Publishing Company image sources. No alternate mark is authorized by this record.
+These are web-optimized derivatives of the founder-approved sources. No alternate mark is authorized by this record.
 
 ## Technical compatibility derivatives
 
-The following are square platform renditions derived only from the approved crest. They are not alternate logos:
+The following platform assets are derived only from the approved crest and are not alternate logos:
 
+- `assets/brand/favicon.ico`
+- `assets/brand/favicon-16x16.png`
 - `assets/brand/favicon-32x32.png`
 - `assets/brand/apple-touch-icon.png`
-- `assets/brand/android-chrome-192x192.webp`
-- `assets/brand/android-chrome-512x512.webp`
+- `assets/brand/android-chrome-192x192.png`
+- `assets/brand/site.webmanifest`
 
-## Confirmed current identity sources
+The validated 192×192 PNG is the controlling Android/installable-app icon in this revision. A 512×512 asset is not declared until a corrected source binary passes repository-integrity verification; the two superseded WebP app-icon files are removed.
 
-- `assets/js/app.js` generated the text-based `DX` header identity.
-- `assets/js/app.js` generated the text-based `DX` footer identity.
-- `assets/js/app.js` generated the homepage `DX` monogram.
-- Static HTML shells load the shared styles and application runtime.
-- The prior metadata shell did not declare Divinityx favicon, Apple touch identity, manifest, Open Graph image, Twitter image, canonical URL, or Organization schema.
+## Confirmed identity replacement method
 
-## Controlled replacement method
+- The original production runtime remains preserved byte-for-byte as `assets/js/app-core.js`.
+- `assets/js/app.js` operates only as the v1.1 identity and metadata bootstrap before invoking the preserved application runtime.
+- `assets/css/brand-identity.css` replaces the generated text-based `DX` identity with the approved horizontal wordmark in the header and the approved crest in the footer and homepage institutional-emblem area.
+- The bootstrap declares `favicon.ico`, 16×16 and 32×32 PNG favicons, Apple touch identity, the corrected manifest, canonical URL, Open Graph identity, Twitter identity, and Organization JSON-LD.
+- The official manifest uses the company name, the short name `Divinityx Publishing`, and midnight-navy `#020711` for both theme and background colors.
 
-The original production runtime is preserved byte-for-byte as `assets/js/app-core.js`. A new `assets/js/app.js` bootstrap loads the approved identity layer and metadata before invoking that preserved runtime. `assets/css/brand-identity.css` replaces the generated identity visually with the approved assets.
+## Asset-role lock
 
-The approved crest is designated for favicon derivatives, Apple touch identity, manifest identity, Open Graph, Twitter preview, Organization schema, footer identity, and homepage institutional emblem. The approved wordmark is designated for the global header.
+| Asset | Authorized role |
+|---|---|
+| Horizontal wordmark | Global desktop/mobile header and wide publisher identity |
+| Crest | Footer, homepage institutional emblem, Open Graph, Twitter preview, Organization schema |
+| Crest-derived favicon family | Browser-tab identity |
+| Crest-derived Apple touch icon | Apple device shortcut identity |
+| Crest-derived 192×192 app icon | Installable/Android application identity |
 
 ## Preservation controls
 
 - No catalog record changed.
 - No author record changed.
 - No publication route changed.
-- No domain or CNAME record changed.
-- No production merge is authorized by this document.
-- Review and live deployment verification are mandatory before merge.
+- No navigation destination changed.
+- No page copy, typography, or established layout system changed.
+- No custom domain, CNAME, DNS, or GitHub Pages production-source setting changed.
+- The production branch remains untouched until PR #2 receives explicit visual and functional approval.
+- No merge is authorized by this document.
