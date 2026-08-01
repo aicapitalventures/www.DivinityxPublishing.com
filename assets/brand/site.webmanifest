@@ -9,8 +9,14 @@
   "theme_color": "#020711",
   "icons": [
     {
-      "src": "divinityx-publishing-crest-gold.webp",
-      "sizes": "110x159",
+      "src": "android-chrome-192x192.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "android-chrome-512x512.webp",
+      "sizes": "512x512",
       "type": "image/webp",
       "purpose": "any"
     }

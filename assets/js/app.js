@@ -13,8 +13,8 @@
   }
 
   const declarations = [
-    ['link', { rel: 'icon', type: 'image/webp', href: absolute('assets/brand/divinityx-publishing-crest-gold.webp') }],
-    ['link', { rel: 'apple-touch-icon', href: absolute('assets/brand/divinityx-publishing-crest-gold.webp') }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: absolute('assets/brand/favicon-32x32.png') }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: absolute('assets/brand/apple-touch-icon.png') }],
     ['link', { rel: 'manifest', href: absolute('assets/brand/site.webmanifest') }],
     ['meta', { name: 'description', content: 'Divinityx Publishing Company develops books, authors, research, and enduring intellectual property with disciplined editorial stewardship and long-term catalog value.' }],
     ['meta', { property: 'og:type', content: 'website' }],
