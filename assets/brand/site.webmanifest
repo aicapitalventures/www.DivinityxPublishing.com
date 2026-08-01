@@ -1,0 +1,18 @@
+{
+  "name": "Divinityx Publishing Company",
+  "short_name": "Divinityx Publishing",
+  "description": "Books, authors, research, and enduring intellectual property developed with structure, rights clarity, and long-term catalog value.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#020711",
+  "theme_color": "#020711",
+  "icons": [
+    {
+      "src": "divinityx-publishing-crest-gold.webp",
+      "sizes": "72x104",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}
