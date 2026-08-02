@@ -1,62 +1,56 @@
-# BR07 — Production Brand Identity Lock v1.1
+# BR07 — Production Brand Identity Lock v1.2
 
 **Repository:** `aicapitalventures/www.DivinityxPublishing.com`  
 **Production source:** `build/01-static-publication-catalog`  
 **Controlled branch:** `build/07-production-brand-identity-lock`  
 **Pull request:** `#2`
 
-## Corrected source assignment
+## Corrected founder-approved source assignment
 
-The founder-supplied packages supersede the earlier staged binary assets:
+- `b498fcbd-e511-4bae-9a3e-f0781fa71a8d.png` — native 607×155 — controls the global desktop/mobile header wordmark.
+- `cover.png` — native 2033×774 — controls the homepage institutional lockup, footer corporate identity, Open Graph image, Twitter preview image, and Organization-schema logo.
+- `celestial_emblem_of_divinityx_publishing.png` — native 1024×1024 — controls favicon, Apple touch, Android/app, and platform-icon derivatives.
 
-- `favicon_io (1).zip` is the controlling source for the horizontal Divinityx Publishing Company wordmark used in the global header and other wide identity placements.
-- `favicon_io.zip` is the controlling source for the Divinityx Publishing Company crest, footer identity, homepage institutional emblem, favicon family, Apple touch identity, Android/app identity, Open Graph image, Twitter preview image, and Organization-schema logo.
+No alternate or generated Divinityx identity is authorized by this record.
 
-## Canonical web assets
+## Canonical website assets
 
 - `assets/brand/divinityx-publishing-wordmark-gold.webp`
 - `assets/brand/divinityx-publishing-crest-gold.webp`
-
-These are web-optimized derivatives of the founder-approved sources. No alternate mark is authorized by this record.
-
-## Technical compatibility derivatives
-
-The following platform assets are derived only from the approved crest and are not alternate logos:
-
 - `assets/brand/favicon.ico`
 - `assets/brand/favicon-16x16.png`
 - `assets/brand/favicon-32x32.png`
 - `assets/brand/apple-touch-icon.png`
 - `assets/brand/android-chrome-192x192.png`
+- `assets/brand/android-chrome-512x512.png`
 - `assets/brand/site.webmanifest`
 
-The validated 192×192 PNG is the controlling Android/installable-app icon in this revision. A 512×512 asset is not declared until a corrected source binary passes repository-integrity verification; the two superseded WebP app-icon files are removed.
+## Exact proportion lock
 
-## Confirmed identity replacement method
+- Header wordmark aspect ratio: `607 / 155`.
+- Homepage/footer corporate lockup aspect ratio: `2033 / 774`.
+- Platform icon source aspect ratio: `1 / 1`.
 
-- The original production runtime remains preserved byte-for-byte as `assets/js/app-core.js`.
-- `assets/js/app.js` operates only as the v1.1 identity and metadata bootstrap before invoking the preserved application runtime.
-- `assets/css/brand-identity.css` replaces the generated text-based `DX` identity with the approved horizontal wordmark in the header and the approved crest in the footer and homepage institutional-emblem area.
-- The bootstrap declares `favicon.ico`, 16×16 and 32×32 PNG favicons, Apple touch identity, the corrected manifest, canonical URL, Open Graph identity, Twitter identity, and Organization JSON-LD.
-- The official manifest uses the company name, the short name `Divinityx Publishing`, and midnight-navy `#020711` for both theme and background colors.
+`assets/css/brand-identity.css` must use these actual artwork proportions rather than previously assumed ratios.
 
-## Asset-role lock
+## Homepage display correction
 
-| Asset | Authorized role |
-|---|---|
-| Horizontal wordmark | Global desktop/mobile header and wide publisher identity |
-| Crest | Footer, homepage institutional emblem, Open Graph, Twitter preview, Organization schema |
-| Crest-derived favicon family | Browser-tab identity |
-| Crest-derived Apple touch icon | Apple device shortcut identity |
-| Crest-derived 192×192 app icon | Installable/Android application identity |
+The homepage lockup receives a larger usable display area within the existing right-side hero composition. The approved hero copy, grid relationship, navigation, typography, color system, and route structure remain preserved.
+
+## Runtime and metadata integration
+
+- `assets/js/app-core.js` remains the preserved production application runtime.
+- `assets/js/app.js` loads the isolated v1.2 brand layer and declares favicon, Apple touch, manifest, Open Graph, Twitter, canonical URL, and Organization schema identity.
+- `assets/brand/site.webmanifest` declares both the 192×192 and 512×512 crest-derived application icons and preserves midnight navy `#020711` as the theme and background color.
 
 ## Preservation controls
 
-- No catalog record changed.
+- No publication record changed.
 - No author record changed.
-- No publication route changed.
+- No catalog search, filter, or count changed.
 - No navigation destination changed.
-- No page copy, typography, or established layout system changed.
+- No book, author, program, institutional, legal, or fallback route changed.
+- No approved page copy or typography changed.
 - No custom domain, CNAME, DNS, or GitHub Pages production-source setting changed.
-- The production branch remains untouched until PR #2 receives explicit visual and functional approval.
+- The production branch remains untouched until explicit Final Merge Gate approval.
 - No merge is authorized by this document.

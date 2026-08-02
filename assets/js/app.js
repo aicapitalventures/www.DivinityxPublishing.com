@@ -1,4 +1,4 @@
-/* Divinityx Publishing Company — production identity bootstrap v1.1. */
+/* Divinityx Publishing Company — production identity bootstrap v1.2. */
 (function () {
   const head = document.head;
   const root = document.baseURI;
@@ -25,7 +25,7 @@
     ['meta[property="og:description"]', 'meta', { property: 'og:description', content: 'Books, ideas, and legacies built to outlive the moment.' }],
     ['meta[property="og:url"]', 'meta', { property: 'og:url', content: location.href }],
     ['meta[property="og:image"]', 'meta', { property: 'og:image', content: absolute('assets/brand/divinityx-publishing-crest-gold.webp') }],
-    ['meta[name="twitter:card"]', 'meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta[name="twitter:card"]', 'meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta[name="twitter:title"]', 'meta', { name: 'twitter:title', content: document.title || 'Divinityx Publishing Company' }],
     ['meta[name="twitter:description"]', 'meta', { name: 'twitter:description', content: 'Books, ideas, and legacies built to outlive the moment.' }],
     ['meta[name="twitter:image"]', 'meta', { name: 'twitter:image', content: absolute('assets/brand/divinityx-publishing-crest-gold.webp') }]
