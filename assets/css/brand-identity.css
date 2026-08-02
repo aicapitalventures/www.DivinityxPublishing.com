@@ -28,10 +28,15 @@
   margin-bottom: 20px;
 }
 
+/*
+ * Footer identity lock: use the founder-approved vertical corporate crest so
+ * DivinityxPublishing.com and VoiceToLegacy.org present the same institutional
+ * footer branding. Header and homepage identity assets remain unchanged.
+ */
 .brand-footer::before {
-  width: clamp(245px, 24vw, 330px);
-  aspect-ratio: 2033 / 774;
-  background-image: url("../brand/divinityx-publishing-crest-gold.webp");
+  width: clamp(150px, 14vw, 190px);
+  aspect-ratio: 1 / 1;
+  background-image: url("../brand/android-chrome-512x512.png");
   background-position: left center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -85,7 +90,7 @@
   .header-inner { min-height: 76px; }
   .brand { min-width: 174px; }
   .brand::before { width: 174px; }
-  .brand-footer::before { width: min(290px, 82vw); }
+  .brand-footer::before { width: min(178px, 58vw); }
   .hero-monogram {
     min-height: 235px;
     aspect-ratio: 1.22 / 1 !important;
